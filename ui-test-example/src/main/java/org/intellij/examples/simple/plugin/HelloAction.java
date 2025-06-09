@@ -6,6 +6,7 @@ import com.intellij.icons.AllIcons;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.ui.Messages;
+import com.intellij.openapi.actionSystem.ActionUpdateThread;
 
 public class HelloAction extends AnAction {
   @Override
@@ -17,5 +18,10 @@ public class HelloAction extends AnAction {
   public void update(AnActionEvent e) {
     super.update(e);
     e.getPresentation().setIcon(AllIcons.General.Information);
+  }
+
+  @Override
+  public ActionUpdateThread getActionUpdateThread() {
+    return ActionUpdateThread.EDT;
   }
 }
