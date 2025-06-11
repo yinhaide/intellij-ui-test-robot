@@ -26,7 +26,7 @@ subprojects {
     group = "com.intellij.remoterobot"
 
     kotlin {
-        jvmToolchain(11)
+        jvmToolchain(17)
     }
 
     repositories {
