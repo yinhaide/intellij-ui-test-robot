@@ -58,6 +58,7 @@ intellijPlatformTesting.runIde {
                         "-Dapple.laf.useScreenMenuBar=false",
                         "-Didea.trust.all.projects=true",
                         "-Dide.show.tips.on.startup.default.value=false",
+                        "-Djava.awt.headless=false",
                 ]
             } as CommandLineArgumentProvider)
         }
